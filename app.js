@@ -19,12 +19,12 @@ const morgan = require('morgan');
 
 //use cors app
 app.use(cors({
-    origin: "http://localhost:5176/", 
+    origin: "http://localhost:5176", 
     credentials: true
 }));
 
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:5176/');
+    res.header('Access-Control-Allow-Origin', 'http://localhost:5176');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
 });

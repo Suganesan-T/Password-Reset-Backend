@@ -2,7 +2,7 @@
 const User = require("../models/userRegister");
 
 //import bcrypt for password hashing
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const sendEmail = require("../utils/email");
 

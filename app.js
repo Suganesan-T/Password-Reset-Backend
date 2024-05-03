@@ -19,9 +19,10 @@ const morgan = require('morgan');
 
 //use cors app
 app.use(cors({
-    origin: '*',
+    origin: "*",
     credentials: true
 }));
+
 
 //use cookie-parser app
 app.use(cookieParser());

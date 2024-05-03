@@ -24,7 +24,7 @@ app.use(cors({
 }));
 
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://cerulean-pastelito-5561d7.netlify.app');
+    res.header('Access-Control-Allow-Origin', 'https://cerulean-pastelito-5561d7.netlify.app/');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
 });

@@ -155,7 +155,7 @@ const userController = {
         await user.save();
     
         // create a reset url
-        const resetUrl = `${request.protocol}://cerulean-pastelito-5561d7.netlify.app/api/users/resetPassword/${resetToken}`;
+        const resetUrl = `${request.protocol}://cerulean-pastelito-5561d7.netlify.app/resetPassword/${resetToken}`;
     
         const message = `We have received a password reset request. Please use the link below to reset your password.\n\n${resetUrl}\n\nThis password link will be valid only for 10 minutes.\n\nIf you havn't initiated the request, please ignore the link.`;
     

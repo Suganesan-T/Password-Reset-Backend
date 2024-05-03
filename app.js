@@ -19,12 +19,12 @@ const morgan = require('morgan');
 
 //use cors app
 app.use(cors({
-    origin: "http://localhost:5176", 
+    origin: "https://cerulean-pastelito-5561d7.netlify.app/", 
     credentials: true
 }));
 
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:5176/');
+    res.header('Access-Control-Allow-Origin', 'https://cerulean-pastelito-5561d7.netlify.app/');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
 });

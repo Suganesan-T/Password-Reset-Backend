@@ -19,7 +19,7 @@ const morgan = require('morgan');
 
 //use cors app
 app.use(cors({
-    origin: "https://cerulean-pastelito-5561d7.netlify.app/",
+    origin: "https://cerulean-pastelito-5561d7.netlify.app",
     credentials: true
 }));
 

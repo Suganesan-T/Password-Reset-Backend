@@ -19,7 +19,7 @@ const morgan = require('morgan');
 
 //use cors app
 app.use(cors({
-    origin: "*",
+    origin: "http://localhost:5175",
     credentials: true
 }));
 

@@ -18,18 +18,16 @@ const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 
 //use cors app
-const allowedOrigins = ['https://cerulean-pastelito-5561d7.netlify.app'];
-
 app.use(cors({
-  origin: function (origin, callback) {
-    // Check if the request origin is allowed
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  }
+    origin: "https://cerulean-pastelito-5561d7.netlify.app/", 
+    credentials: true
 }));
+
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'https://cerulean-pastelito-5561d7.netlify.app/');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+});
 
 
 //use cookie-parser app

@@ -18,7 +18,10 @@ const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 
 //use cors app
-app.use(cors("*"));
+app.use(cors({
+    origin: 'https://cerulean-pastelito-5561d7.netlify.app',
+    credentials: true
+  }));
 
 // app.use((req, res, next) => {
 //     res.header('Access-Control-Allow-Origin', 'https://cerulean-pastelito-5561d7.netlify.app/');
